@@ -9,7 +9,7 @@ import { useEffect } from 'react';
 import LoaderScreen from '../components/loader/LoaderScreen';
 import { useState } from 'react';
 import { motion } from 'framer-motion';
-import { ThemeProvider } from "@mui/material/styles";
+import { ThemeProvider } from "@mui/material";
 import theme from "../components/UI/landingPage/theme";
 
 function MyApp({ Component, pageProps }) {

@@ -1,24 +1,59 @@
-import React, { useState, useEffect } from 'react';
-import { AiFillEye, AiFillGithub } from 'react-icons/ai';
-import { motion } from 'framer-motion';
+import React, { useState, useEffect } from "react";
+import { AiFillEye, AiFillGithub } from "react-icons/ai";
+import { motion } from "framer-motion";
 
-import { AppWrap, MotionWrap } from '../Wrappers';
-import { urlFor, client } from '../clientSanity';
-import classes from './products.module.scss';
+import { AppWrap, MotionWrap } from "../Wrappers";
+import { urlFor, client } from "../clientSanity";
+import classes from "./products.module.scss";
 
 const Work = () => {
   const [works, setWorks] = useState([]);
+  console.log("i am work", works);
   const [filterWork, setFilterWork] = useState([]);
-  const [activeFilter, setActiveFilter] = useState('All');
+  console.log("i am filterWork", filterWork);
+  const [activeFilter, setActiveFilter] = useState("All");
   const [animateCard, setAnimateCard] = useState({ y: 0, opacity: 1 });
 
-  useEffect(() => {
-    const query = '*[_type == "works"]';
+  const data = [
+    {
+      id: 0,
+      description:
+        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
+      tags: "mobile",
+      title: "Daroof",
+      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      projectLink:
+        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+    },
+    {
+      id: 1,
+      description:
+        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
+      tags: "Mobile App",
+      title: "Daroof",
+      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      projectLink:
+        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+    },
+    {
+      id: 2,
+      description:
+        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
+      tags: "mobile",
+      title: "Daroof",
+      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      projectLink:
+        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+    },
+  ];
 
-    client.fetch(query).then((data) => {
+  useEffect(() => {
+    // const query = '*[_type == "works"]';
+
+    // client.fetch(query).then((data) => {
       setWorks(data);
       setFilterWork(data);
-    });
+    // });
   }, []);
 
   const handleWorkFilter = (item) => {
@@ -28,31 +63,42 @@ const Work = () => {
     setTimeout(() => {
       setAnimateCard([{ y: 0, opacity: 1 }]);
 
-      if (item === 'All') {
-        setFilterWork(works);
+      if (item === "All") {
+        setFilterWork(data);
       } else {
-        setFilterWork(works.filter((work) => work.tags.includes(item)));
+        setFilterWork(data.filter((work) => work.tags.includes(item)));
       }
     }, 500);
   };
 
   return (
-    <div className={`${classes.products}`} id='product'>
+    <div className={`${classes.products}`} id="product">
       <h1>Products</h1>
-        <hr style={{ borderTop: "3px solid #008bc9",
+      <hr
+        style={{
+          borderTop: "3px solid #008bc9",
           width: "100px",
-          margin: "1rem auto auto auto"}}/>
+          margin: "1rem auto auto auto",
+        }}
+      />
 
       <div className={`${classes.app__work_filter}`}>
-        {['UI/UX', 'Web App', 'Mobile App', 'React JS', 'All'].map((item, index) => (
-          <div
-            key={index}
-            onClick={() => handleWorkFilter(item)}
-            className={[classes.app__work_filter_item, classes.app__flex, classes.p_text, activeFilter === item ? classes.item_active : ''].join(" ")}
-          >
-            {item}
-          </div>
-        ))}
+        {["UI/UX", "Web App", "Mobile App", "React JS", "All"].map(
+          (item, index) => (
+            <div
+              key={index}
+              onClick={() => handleWorkFilter(item)}
+              className={[
+                classes.app__work_filter_item,
+                classes.app__flex,
+                classes.p_text,
+                activeFilter === item ? classes.item_active : "",
+              ].join(" ")}
+            >
+              {item}
+            </div>
+          )
+        )}
       </div>
 
       <motion.div
@@ -61,7 +107,10 @@ const Work = () => {
         className={`${classes.app__work_portfolio}`}
       >
         {filterWork.map((work, index) => (
-          <div className={[classes.app__work_item, classes.app__flex].join(" ")} key={index}>
+          <div
+            className={[classes.app__work_item, classes.app__flex].join(" ")}
+            key={index}
+          >
             <div
               className={[classes.app__work_img, classes.app__flex].join(" ")}
             >
@@ -69,14 +118,19 @@ const Work = () => {
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}
-                transition={{ duration: 0.25, ease: 'easeInOut', staggerChildren: 0.5 }}
-                className={[classes.app__work_hover, classes.app__flex].join(" ")}
+                transition={{
+                  duration: 0.25,
+                  ease: "easeInOut",
+                  staggerChildren: 0.5,
+                }}
+                className={[classes.app__work_hover, classes.app__flex].join(
+                  " "
+                )}
               >
                 <a href={work.projectLink} target="_blank" rel="noreferrer">
-
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.90] }}
+                    whileHover={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className={`${classes.app__flex}`}
                   >
@@ -86,7 +140,7 @@ const Work = () => {
                 <a href={work.codeLink} target="_blank" rel="noreferrer">
                   <motion.div
                     whileInView={{ scale: [0, 1] }}
-                    whileHover={{ scale: [1, 0.90] }}
+                    whileHover={{ scale: [1, 0.9] }}
                     transition={{ duration: 0.25 }}
                     className={`${classes.app__flex}`}
                   >
@@ -96,11 +150,19 @@ const Work = () => {
               </motion.div>
             </div>
 
-            <div className={[classes.app__work_content, classes.app__flex].join(" ")}>
+            <div
+              className={[classes.app__work_content, classes.app__flex].join(
+                " "
+              )}
+            >
               <h4 className={`${classes.bold_text}`}>{work.title}</h4>
-              <p className={`${classes.p_text}`} style={{ marginTop: 10 }}>{work.description}</p>
+              <p className={`${classes.p_text}`} style={{ marginTop: 10 }}>
+                {work.description}
+              </p>
 
-              <div className={[classes.app__work_tag, classes.app__flex].join(" ")}>
+              <div
+                className={[classes.app__work_tag, classes.app__flex].join(" ")}
+              >
                 <p className={`${classes.p_text}`}>{work.tags[0]}</p>
               </div>
             </div>
@@ -113,6 +175,6 @@ const Work = () => {
 
 export default AppWrap(
   MotionWrap(Work, `${classes.app__works}`),
-  'product',
-  'app__primarybg',
+  "product",
+  "app__primarybg"
 );

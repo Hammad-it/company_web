@@ -43,20 +43,20 @@ const Navbar = () => {
   const [color, setColor] = useState('transparent');
   const [textColor, setTextColor] = useState('#000');
   const [shadow, setShadow] = useState('');
-  const [logo, setLogo] = useState('/texuslogoWhite.png');
+  const [logo, setLogo] = useState('/logocomp.jpeg');
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
         setColor('transparent');
         setTextColor('#000000')
         setShadow('rgba(0, 0, 0, 0.24) 0px 3px 8px');
-        setLogo('/texusLogo.png');
+        setLogo('/logocomp.jpeg');
       } else {
         setColor('transparent');
         setTextColor('#000');
         setShadow("");
         setIsOpen(false)
-        setLogo('/texuslogoWhite.png');
+        setLogo('/logocomp.jpeg');
 
 
       }
@@ -65,8 +65,8 @@ const Navbar = () => {
   }, [])
   return (
     <div className={`${classes.Navbar}`} style={{ background: `${color}`, boxShadow: `${shadow}`, padding: '1rem' }}>
-      {/* <img src={logo} alt="texus" width="150px" height="auto" /> */}
-      <h3 >Company logo</h3>
+      <img src={logo} alt="texus" width="150px" height="150px" />
+      {/* <h3 >Company logo</h3> */}
       <div className={[classes.nav_items, isOpen && classes.open].join(" ")}>
         {NAV_LINK.map((item, index) => (
           <Link key={index} onClick={() => setIsOpen(false)} style={{ color: isOpen ? '#000000' : `${textColor}` }} smooth={true} activeClass="active"
