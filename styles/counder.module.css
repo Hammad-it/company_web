@@ -1,0 +1,8 @@
+.counter__bg_image{
+    position: absolute;
+    background-image: url(/counter-bg.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    z-index: -1;
+}

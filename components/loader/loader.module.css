@@ -1,0 +1,8 @@
+.loader__main{
+    height: 100%;
+    width: 100%;
+    background-color: white;
+    position: fixed;
+    display: flex;
+    justify-content: space-evenly;
+}
