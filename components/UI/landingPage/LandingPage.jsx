@@ -3,6 +3,7 @@ import classes from '../../../styles/landingPage.module.css'
 // import * as THREE from 'three'
 // import GLOBE from 'vanta/dist/vanta.globe.min.js'
 import Typewriter from 'typewriter-effect'
+import Link from 'next/link'
 // import { motion } from 'framer-motion'
 
 
@@ -51,7 +52,11 @@ const LandingPage = () => {
           /></h1>
 
           <p>Let me know if you&apos;d like a different style! 😊</p>
-          <a href="/#contact"><button>Contact Us</button></a>
+          <Link href="/#contact" passHref>
+  <a>
+    <button>Contact Us</button>
+  </a>
+</Link>
         </div>
         <div className={`${classes.hero__image__main}`} >
         </div>

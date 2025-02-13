@@ -88,9 +88,11 @@ const Navbar = () => {
         ))}
       </div>
       <div className={`${classes.nav__quote}`} style={{ marginRight: "3rem" }}>
-        <a href="/#contact">
-          <button>Contact Us</button>
-        </a>
+        <Link href="/#contact" passHref>
+          <a>
+            <button>Contact Us</button>
+          </a>
+        </Link>
       </div>
 
       <div
