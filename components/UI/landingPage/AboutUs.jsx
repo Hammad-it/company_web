@@ -11,28 +11,35 @@ const AboutUs = () => {
         <div className={`${classes.about__text}`}>
           <h4>Who We Are</h4>
           <p>
-            Texus is a technology consulting organization that connects
-            strategy, design and engineering services into a seamless workflow
-            devised to support clients every step of the way.
+            SoftRevo is a dynamic software company that seamlessly integrates
+            strategy, design, and engineering to deliver innovative digital
+            solutions. Our mission is to empower businesses with cutting-edge
+            technology, guiding them through every stage of their digital
+            transformation.
           </p>
           <p>
-            Founded in 2019, Texus rapidly became a large team of like-minded
-            professionals with a shared vision for their company. The team is
-            passionate about creating valuable products and helping other
-            businesses climb the ladder of technological development.
+            Founded in 2024, SoftRevo has rapidly grown into a team of
+            passionate professionals who share a common vision for innovation
+            and excellence. We take pride in developing high-quality software
+            solutions that drive business success and technological advancement.
           </p>
           <p>
-            Over the past 02 years, we have designed and built a diverse range
-            of high-quality products from scratch. Our specialists have
-            expertise in a wide variety of spheres including real estate,
-            e-learning, healthcare, e-commerce, advertising, augmented reality,
-            finance, sharing economy, and many more.
+            With over two years of experience, our expertise spans multiple
+            industries, including{" "}
+            <strong>
+              {" "}
+              real estate, e-learning, healthcare, e-commerce, advertising,
+              augmented reality, finance,
+            </strong>{" "}
+            and more. Our diverse portfolio showcases tailor-made solutions
+            designed to meet the unique needs of each client.
           </p>
           <p>
-            After 02 years of experience and a team of 10+ people, we stand more
-            convinced than ever in our core expertise. Trusted by the leading
-            companies. We have completed 300+ projects with 25+ clients. The
-            thing we are most proud of is winning the confidence of our clients.
+            Today, with a dedicated team of 10+ professionals, we have
+            successfully delivered 50+ projects to 25+ satisfied clients. What
+            sets us apart is our unwavering commitment to building long-term
+            partnerships and earning the trust of our clients through
+            exceptional service and results.
           </p>
         </div>
         <div className={`${classes.about__images}`}>

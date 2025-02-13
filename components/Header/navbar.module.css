@@ -138,7 +138,7 @@
   
   }
 
-  .nav__quote{
+  .nav__quote a button{
     height: 40px;
     width: 120px;
     border-radius: 10px;
@@ -146,6 +146,7 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    color: white;
 }
 .nav__quote a{
     border: none;

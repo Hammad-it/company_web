@@ -21,7 +21,7 @@ const Work = () => {
         "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
       tags: "mobile",
       title: "Daroof",
-      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
       projectLink:
         "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
     },
@@ -31,7 +31,7 @@ const Work = () => {
         "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
       tags: "Mobile App",
       title: "Daroof",
-      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
       projectLink:
         "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
     },
@@ -41,7 +41,7 @@ const Work = () => {
         "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
       tags: "mobile",
       title: "Daroof",
-      imgUrl:'image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png',
+      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
       projectLink:
         "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
     },
@@ -51,8 +51,8 @@ const Work = () => {
     // const query = '*[_type == "works"]';
 
     // client.fetch(query).then((data) => {
-      setWorks(data);
-      setFilterWork(data);
+    setWorks(data);
+    setFilterWork(data);
     // });
   }, []);
 

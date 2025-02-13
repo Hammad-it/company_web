@@ -9,7 +9,7 @@ import Testimonial from '../components/UI/landingPage/Testimonials';
 import OurTeam from '../components/UI/landingPage/OurTeam';
 import Product from '../components/containrs/Product';
 import Contact from '../components/contactus/Contact';
-import NewSectionEight from '../components/UI/landingPage/NewSectionEight';
+import NewSectionEight from '../components/UI/landingPage/NewTestimonialSection';
 
 export default function Home() {
   return (<Fragment>
