@@ -18,32 +18,31 @@ const Work = () => {
     {
       id: 0,
       description:
-        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
-      tags: "mobile",
-      title: "Daroof",
-      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
-      projectLink:
-        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+        "AsanRishta is a leading Matrimonial & Vendors service provider for Pakistanis worldwide, with the core objective to solve the problem of finding a match, by connecting people directly in a most secure, economical and convenient manner.Behind AsanRishta, is a team of talented engineers, designers, matchmakers and many more working in their domain to develop an excellent solution to serve our people around the world.",
+      tags: "React JS",
+      title: "AsanRishta",
+      imgUrl:
+        "https://www.asaanrishta.com/banner-img.c5d73896c9c5ed0feaef.webp",
+      projectLink: "https://www.asaanrishta.com/",
     },
     {
       id: 1,
       description:
-        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
-      tags: "Mobile App",
-      title: "Daroof",
-      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
-      projectLink:
-        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+        "SplinterCoach is a dedicated platform designed to assist Splinterlands players in analyzing and improving their gameplay. By connecting your Splinterlands account to SplinterCoach, you can access detailed insights into your battle history, helping you understand the factors contributing to your victories and defeats.",
+      tags: "Web App",
+      title: "splintercoach",
+      imgUrl: "https://www.splintercoach.com/_next/static/media/bg_game-stats.7b628580.png",
+      projectLink: "https://www.splintercoach.com/",
     },
     {
       id: 2,
       description:
-        "The app holds the potential of a full fledge Beauty related and grooming services, all in one place. A service provider can register his/herself and the customer can hire them or book them for later on their doorstep.",
-      tags: "mobile",
-      title: "Daroof",
-      imgUrl: "image-b7339bacd398d5e468341158bc320880c15b5b4e-5000x3333-png",
+        "Recruitzi provides an innovative and end-to-end software solution on a single platform for on-demand staffing agencies across North America. We have designed online web portals and mobile applications to manage staffing agency front offices, employee onboarding, and client management to simplify staffing and placement operations.",
+      tags: "Web App",
+      title: "Recruitzi",
+      imgUrl: "https://recruitzi.com/wp-content/uploads/2022/05/All-In-One-Platform-For-Staffing-Business.webp",
       projectLink:
-        "https://play.google.com/store/apps/details?id=com.daroof&hl=en&gl=US",
+        "https://recruitzi.com/",
     },
   ];
 
