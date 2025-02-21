@@ -53,14 +53,14 @@ const Contact = () => {
       <div className={`${classes.app__footer_cards}`}>
         <div className={`${classes.app__footer_card}`}>
           <img src="./email.png" alt="email" />
-          <a href="texus:info@texus.co.uk" className={`${classes.p_text}`}>
-            info@company.com
+          <a href="softrevo:info@SoftRevo.net" className={`${classes.p_text}`}>
+            info@SoftRevo.net
           </a>
         </div>
         <div className={`${classes.app__footer_card}`}>
           <img src="/mobile.png" alt="phone" />
-          <a href="tel:+92 (311) 4537947" className={`${classes.p_text}`}>
-            +92 (311) 453-7947
+          <a href="tel: +966 532626494" className={`${classes.p_text}`}>
+            +966 532626494
           </a>
         </div>
       </div>

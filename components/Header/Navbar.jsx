@@ -39,23 +39,23 @@ const NAV_LINK = [
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
-  const [color, setColor] = useState("transparent");
+  const [color, setColor] = useState("white");
   const [textColor, setTextColor] = useState("#000");
   const [shadow, setShadow] = useState("");
-  const [logo, setLogo] = useState("/logocomp.jpeg");
+  // const [logo, setLogo] = useState("/log1.jpg");
   useEffect(() => {
     const changeColor = () => {
       if (window.scrollY >= 90) {
-        setColor("transparent");
+        setColor("white");
         setTextColor("#000000");
         setShadow("rgba(0, 0, 0, 0.24) 0px 3px 8px");
-        setLogo("/logocomp.jpeg");
+        // setLogo("/logocomp.jpeg");
       } else {
-        setColor("transparent");
+        setColor("white");
         setTextColor("#000");
         setShadow("");
         setIsOpen(false);
-        setLogo("/logocomp.jpeg");
+        // setLogo("/logo1.jpg");
       }
     };
     window.addEventListener("scroll", changeColor);
@@ -69,7 +69,7 @@ const Navbar = () => {
         padding: "1rem",
       }}
     >
-      <img src={logo} alt="texus" width="150px" height="150px" />
+      <img src={'/logo3.png'} alt="SoftRevo" width={'200px'} height={'auto'} />
       {/* <h3 >Company logo</h3> */}
       <div className={[classes.nav_items, isOpen && classes.open].join(" ")}>
         {NAV_LINK.map((item, index) => (

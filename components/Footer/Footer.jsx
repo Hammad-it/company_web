@@ -12,6 +12,7 @@ const Footer = () => {
         <div className={`${classes.footer_row}`}>
           <div className={`${classes.footer_column}`}>
             <h3 style={{ color: "#fff" }}>SoftRevo.</h3>
+            {/* <img src={'/logo3.png'} alt="SoftRevo" width={'200px'} height={'auto'} /> */}
             <p>
               SoftRevo is a UAE-based software company specializing in
               cutting-edge digital solutions. With over 3 years of experience,
@@ -66,11 +67,11 @@ const Footer = () => {
             </span>
             <br />
             <span style={{ margin: "20px 0px" }}>
-              <strong>Phone:</strong> <span> +966-53-2626494</span>
+              <strong>Phone:</strong> <span>  +966 532626494</span>
             </span>
             <br />
             <span style={{ margin: "20px 0px" }}>
-              <strong>Email:</strong> <span> info@company.co.uk</span>
+              <strong>Email:</strong> <span> info@SoftRevo.net</span>
             </span>
             <div className={`${classes.social_icons}`}>
               <div>

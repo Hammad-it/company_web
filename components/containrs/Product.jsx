@@ -31,7 +31,7 @@ const Work = () => {
         "SplinterCoach is a dedicated platform designed to assist Splinterlands players in analyzing and improving their gameplay. By connecting your Splinterlands account to SplinterCoach, you can access detailed insights into your battle history, helping you understand the factors contributing to your victories and defeats.",
       tags: "Web App",
       title: "splintercoach",
-      imgUrl: "https://www.splintercoach.com/_next/static/media/bg_game-stats.7b628580.png",
+      imgUrl: "https://i.ytimg.com/vi/vO_Vr6HA-z4/hq720.jpg?sqp=-oaymwEhCK4FEIIDSFryq4qpAxMIARUAAAAAGAElAADIQj0AgKJD&rs=AOn4CLCea7g6O-jW0rBybdGFVT81W2am7A",
       projectLink: "https://www.splintercoach.com/",
     },
     {
@@ -113,7 +113,7 @@ const Work = () => {
             <div
               className={[classes.app__work_img, classes.app__flex].join(" ")}
             >
-              <img src={urlFor(work.imgUrl)} alt={work.name} />
+              <img src={work.imgUrl} alt={work.name} />
 
               <motion.div
                 whileHover={{ opacity: [0, 1] }}

@@ -18,13 +18,13 @@ const AboutUs = () => {
             transformation.
           </p>
           <p>
-            Founded in 2024, SoftRevo has rapidly grown into a team of
+            Founded in 2022, SoftRevo has rapidly grown into a team of
             passionate professionals who share a common vision for innovation
             and excellence. We take pride in developing high-quality software
             solutions that drive business success and technological advancement.
           </p>
           <p>
-            With over two years of experience, our expertise spans multiple
+            With over three years of experience, our expertise spans multiple
             industries, including{" "}
             <strong>
               {" "}

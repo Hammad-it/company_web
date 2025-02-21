@@ -39,7 +39,7 @@ const LandingPage = () => {
       <div className={`${classes.hero__main}`}>
         
         <div className={`${classes.hero__text}`}>
-          <h1>Empowering Innovation, Transforming Ideas into Scalable
+          <h1 style={{color:'white'}}>Empowering Innovation, Transforming Ideas into Scalable
 
           </h1>
           <h1 style={{ color: "#4288E8" }}><Typewriter
@@ -51,7 +51,7 @@ const LandingPage = () => {
             }}
           /></h1>
 
-          <p>Let me know if you&apos;d like a different style! 😊</p>
+          <p style={{color:'white'}}>Let me know if you&apos;d like a different style! 😊</p>
           <Link href="/#contact" passHref>
   <a>
     <button>Contact Us</button>

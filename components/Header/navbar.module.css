@@ -10,6 +10,7 @@
     top: 0;
     left: 0;
     z-index: 1030;
+    background-color: white;
   }
   
   .Navbar > .nav_logo {
@@ -69,7 +70,7 @@
       flex-direction: column;
       left: 0;
       width: 100%;
-      background: #000;
+      background: white;
       height: 92vh;
       transform: translateX(-100%);
       transition: all 0.45s ease-in-out;

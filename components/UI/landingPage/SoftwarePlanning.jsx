@@ -24,7 +24,7 @@ const SoftwarePlanning = () => {
         <div className={`${classes.sp__main}`}>
           <div className={`${classes.sp__div1}`}>
             <div>
-              <img src="/Strategy-Planning.jpg" alt="me" width="100%" height="auto" />
+              <img src="/Strategy-Planning.jpg" alt="me" width="100%" height="300px" style={{objectFit:'cover'}}/>
             </div>
             <h5>Strategy & Planning</h5>
             <p>
@@ -35,7 +35,7 @@ const SoftwarePlanning = () => {
           </div>
           <div className={`${classes.sp__div2}`}>
             <div>
-              <img src="/Design-Development.jpg" alt="me" width="100%" height="auto" />
+              <img src="/Design-Development.jpg" alt="me" width="100%" height="300px" style={{objectFit:'cover'}}/>
             </div>
             <h5>Design {"&"} Development</h5>
             <p>
@@ -47,7 +47,7 @@ const SoftwarePlanning = () => {
           </div>
           <div className={`${classes.sp__div3}`}>
             <div>
-              <img src="/Testing-Quality-Assurance.jpg" alt="me" width="100%" height="auto" />
+              <img src="/Testing-Quality-Assurance.jpg" alt="me" width="100%" height="300px" style={{objectFit:'cover'}}/>
             </div>
             <h5>Testing {"&"} Quality Assurance</h5>
             <p>
