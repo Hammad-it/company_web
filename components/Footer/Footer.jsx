@@ -74,7 +74,7 @@ const Footer = () => {
               <strong>Email:</strong> <span> info@SoftRevo.net</span>
             </span>
             <div className={`${classes.social_icons}`}>
-              <div>
+              {/* <div>
                 <BsFacebook size={30} />
               </div>
               <div>
@@ -82,9 +82,11 @@ const Footer = () => {
               </div>
               <div>
                 <AiFillInstagram size={40} />
-              </div>
+              </div> */}
               <div>
-                <ImLinkedin size={30} />
+                <a href="https://www.linkedin.com/company/softrevo/about/?viewAsMember=true" target="_blank" rel="noreferrer">
+                <ImLinkedin size={30} style={{color:'white'}}/>
+                </a>
               </div>
             </div>
           </div>
